@@ -78,7 +78,7 @@ def parse_structured_query(query: str):
             "type": "semantic_search_k"
         }
 
-    return None [cite: 9]
+    return None
 
 # --- Weaviate Connection and Setup ---
 @st.cache_resource # Cache the connection, client, and chain setup
