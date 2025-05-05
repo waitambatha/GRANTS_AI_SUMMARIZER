@@ -1,6 +1,6 @@
 import weaviate.classes as wvc
 from weaviate.classes.query import Filter # Import Filter
-from weaviate.classes.config import Sort # Import Sort
+from weaviate.classes.query import Sort
 import streamlit as st
 import weaviate
 import re # Import regular expressions for query parsing
@@ -10,7 +10,7 @@ from langchain_openai import ChatOpenAI, OpenAIEmbeddings
 from langchain.chains import RetrievalQA
 from schema import GRANT_CLASS_NAME
 from weaviate.auth import AuthApiKey
-import weaviate.classes as wvc
+
 
 # --- Use st.secrets for environment variables ---
 WEAVIATE_URL = st.secrets["WEAVIATE_REST_URL"]
