@@ -1,28 +1,21 @@
-# app.py (Corrected Section in setup_rag_chain)
 import streamlit as st
 import weaviate
-import os
-from dotenv import load_dotenv
 from langchain_core.documents import Document
 from langchain_weaviate.vectorstores import WeaviateVectorStore
 from langchain_openai import ChatOpenAI, OpenAIEmbeddings
 from langchain.chains import RetrievalQA
 from schema import GRANT_CLASS_NAME
-from weaviate.auth import AuthApiKey # Correct import
+from weaviate.auth import AuthApiKey
 import weaviate.classes as wvc
 
-# Load environment variables
-load_dotenv()
-WEAVIATE_URL = os.getenv("WEAVIATE_REST_URL")
-WEAVIATE_API_KEY = os.getenv("WEAVIATE_API_KEY")
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
-# WEAVIATE_GRPC_HOST env var is not directly used here anymore
+# --- Use st.secrets for environment variables ---
+WEAVIATE_URL = st.secrets["WEAVIATE_REST_URL"]
+WEAVIATE_API_KEY = st.secrets["WEAVIATE_API_KEY"]
+OPENAI_API_KEY = st.secrets["OPENAI_API_KEY"]
 
-# --- (Environment variable checks remain the same) ---
-# Use only the variables needed for the simplified connection
+# --- Environment variable check ---
 if not WEAVIATE_URL or not WEAVIATE_API_KEY or not OPENAI_API_KEY:
-    st.error("Missing one or more required environment variables (WEAVIATE_REST_URL, WEAVIATE_API_KEY, OPENAI_API_KEY).")
-    st.error("Please check your .env file.")
+    st.error("Missing one or more required secrets: WEAVIATE_REST_URL, WEAVIATE_API_KEY, or OPENAI_API_KEY.")
     st.stop()
 # --- (End env var checks) ---
 
