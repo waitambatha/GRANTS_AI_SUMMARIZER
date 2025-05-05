@@ -1,0 +1,114 @@
+2025-05-05 11:20:11,856 [INFO] Starting ingestion script
+2025-05-05 11:20:11,856 [INFO] Starting data loading and preprocessing from grants.csv
+2025-05-05 11:20:12,279 [INFO] Successfully read CSV file with 38151 rows
+2025-05-05 11:20:12,279 [INFO] All required columns found, creating combinedText field
+2025-05-05 11:20:13,999 [INFO] Successfully preprocessed 38151 records
+2025-05-05 11:20:14,003 [INFO] Starting data ingestion process
+2025-05-05 11:20:14,004 [INFO] Connecting to Weaviate Cloud
+2025-05-05 11:20:14,991 [INFO] HTTP Request: GET https://gyytjsarjy1zjv5iyhfq.c0.us-west3.gcp.weaviate.cloud/v1/meta "HTTP/1.1 200 OK"
+2025-05-05 11:20:15,835 [INFO] HTTP Request: GET https://pypi.org/pypi/weaviate-client/json "HTTP/1.1 200 OK"
+2025-05-05 11:20:15,924 [INFO] Weaviate client connected successfully
+2025-05-05 11:20:15,925 [INFO] Retrieved collection 'Grant'
+2025-05-05 11:20:15,925 [INFO] Starting batch ingestion for 38151 objects
+2025-05-05 11:20:16,182 [INFO] Initial collection size: 38151 objects
+2025-05-05 11:20:16,431 [INFO] HTTP Request: GET https://gyytjsarjy1zjv5iyhfq.c0.us-west3.gcp.weaviate.cloud/v1/schema/Grant "HTTP/1.1 200 OK"
+2025-05-05 11:20:16,681 [INFO] HTTP Request: GET https://gyytjsarjy1zjv5iyhfq.c0.us-west3.gcp.weaviate.cloud/v1/nodes "HTTP/1.1 200 OK"
+2025-05-05 11:20:17,911 [INFO] Added 500 objects to batch
+2025-05-05 11:20:17,946 [INFO] HTTP Request: GET https://gyytjsarjy1zjv5iyhfq.c0.us-west3.gcp.weaviate.cloud/v1/nodes "HTTP/1.1 200 OK"
+2025-05-05 11:20:24,059 [INFO] HTTP Request: GET https://gyytjsarjy1zjv5iyhfq.c0.us-west3.gcp.weaviate.cloud/v1/nodes "HTTP/1.1 200 OK"
+2025-05-05 11:20:24,071 [INFO] Added 1000 objects to batch
+2025-05-05 11:20:24,713 [INFO] Added 1500 objects to batch
+2025-05-05 11:20:25,316 [INFO] HTTP Request: GET https://gyytjsarjy1zjv5iyhfq.c0.us-west3.gcp.weaviate.cloud/v1/nodes "HTTP/1.1 200 OK"
+2025-05-05 11:20:25,328 [INFO] Added 2000 objects to batch
+2025-05-05 11:20:25,932 [INFO] Added 2500 objects to batch
+2025-05-05 11:20:26,365 [INFO] Added 3000 objects to batch
+2025-05-05 11:20:26,567 [INFO] HTTP Request: GET https://gyytjsarjy1zjv5iyhfq.c0.us-west3.gcp.weaviate.cloud/v1/nodes "HTTP/1.1 200 OK"
+2025-05-05 11:20:26,787 [INFO] Added 3500 objects to batch
+2025-05-05 11:20:27,243 [INFO] Added 4000 objects to batch
+2025-05-05 11:20:27,419 [INFO] Added 4500 objects to batch
+2025-05-05 11:20:27,795 [INFO] Added 5000 objects to batch
+2025-05-05 11:20:27,823 [INFO] HTTP Request: GET https://gyytjsarjy1zjv5iyhfq.c0.us-west3.gcp.weaviate.cloud/v1/nodes "HTTP/1.1 200 OK"
+2025-05-05 11:20:28,110 [INFO] Added 5500 objects to batch
+2025-05-05 11:20:28,521 [INFO] Added 6000 objects to batch
+2025-05-05 11:20:28,722 [INFO] Added 6500 objects to batch
+2025-05-05 11:20:29,073 [INFO] Added 7000 objects to batch
+2025-05-05 11:20:29,095 [INFO] HTTP Request: GET https://gyytjsarjy1zjv5iyhfq.c0.us-west3.gcp.weaviate.cloud/v1/nodes "HTTP/1.1 200 OK"
+2025-05-05 11:20:29,202 [INFO] Added 7500 objects to batch
+2025-05-05 11:20:29,548 [INFO] Added 8000 objects to batch
+2025-05-05 11:20:29,935 [INFO] Added 8500 objects to batch
+2025-05-05 11:20:30,196 [INFO] Added 9000 objects to batch
+2025-05-05 11:20:30,413 [INFO] HTTP Request: GET https://gyytjsarjy1zjv5iyhfq.c0.us-west3.gcp.weaviate.cloud/v1/nodes "HTTP/1.1 200 OK"
+2025-05-05 11:20:30,536 [INFO] Added 9500 objects to batch
+2025-05-05 11:20:30,657 [INFO] Added 10000 objects to batch
+2025-05-05 11:20:30,985 [INFO] Added 10500 objects to batch
+2025-05-05 11:20:31,096 [INFO] Added 11000 objects to batch
+2025-05-05 11:20:31,487 [INFO] Added 11500 objects to batch
+2025-05-05 11:20:31,670 [INFO] HTTP Request: GET https://gyytjsarjy1zjv5iyhfq.c0.us-west3.gcp.weaviate.cloud/v1/nodes "HTTP/1.1 200 OK"
+2025-05-05 11:20:31,738 [INFO] Added 12000 objects to batch
+2025-05-05 11:20:32,060 [INFO] Added 12500 objects to batch
+2025-05-05 11:20:32,195 [INFO] Added 13000 objects to batch
+2025-05-05 11:20:32,305 [INFO] Added 13500 objects to batch
+2025-05-05 11:20:32,629 [INFO] Added 14000 objects to batch
+2025-05-05 11:20:32,765 [INFO] Added 14500 objects to batch
+2025-05-05 11:20:32,963 [INFO] HTTP Request: GET https://gyytjsarjy1zjv5iyhfq.c0.us-west3.gcp.weaviate.cloud/v1/nodes "HTTP/1.1 200 OK"
+2025-05-05 11:20:33,051 [INFO] Added 15000 objects to batch
+2025-05-05 11:20:33,175 [INFO] Added 15500 objects to batch
+2025-05-05 11:20:33,321 [INFO] Added 16000 objects to batch
+2025-05-05 11:20:33,549 [INFO] Added 16500 objects to batch
+2025-05-05 11:20:33,719 [INFO] Added 17000 objects to batch
+2025-05-05 11:20:33,986 [INFO] Added 17500 objects to batch
+2025-05-05 11:20:34,193 [INFO] Added 18000 objects to batch
+2025-05-05 11:20:34,240 [INFO] HTTP Request: GET https://gyytjsarjy1zjv5iyhfq.c0.us-west3.gcp.weaviate.cloud/v1/nodes "HTTP/1.1 200 OK"
+2025-05-05 11:20:34,339 [INFO] Added 18500 objects to batch
+2025-05-05 11:20:34,492 [INFO] Added 19000 objects to batch
+2025-05-05 11:20:34,708 [INFO] Added 19500 objects to batch
+2025-05-05 11:20:34,827 [INFO] Added 20000 objects to batch
+2025-05-05 11:20:35,036 [INFO] Added 20500 objects to batch
+2025-05-05 11:20:35,227 [INFO] Added 21000 objects to batch
+2025-05-05 11:20:35,353 [INFO] Added 21500 objects to batch
+2025-05-05 11:20:35,510 [INFO] Added 22000 objects to batch
+2025-05-05 11:20:35,547 [INFO] HTTP Request: GET https://gyytjsarjy1zjv5iyhfq.c0.us-west3.gcp.weaviate.cloud/v1/nodes "HTTP/1.1 200 OK"
+2025-05-05 11:20:35,716 [INFO] Added 22500 objects to batch
+2025-05-05 11:20:35,862 [INFO] Added 23000 objects to batch
+2025-05-05 11:20:35,987 [INFO] Added 23500 objects to batch
+2025-05-05 11:20:36,279 [INFO] Added 24000 objects to batch
+2025-05-05 11:20:36,413 [INFO] Added 24500 objects to batch
+2025-05-05 11:20:36,533 [INFO] Added 25000 objects to batch
+2025-05-05 11:20:36,682 [INFO] Added 25500 objects to batch
+2025-05-05 11:20:36,796 [INFO] HTTP Request: GET https://gyytjsarjy1zjv5iyhfq.c0.us-west3.gcp.weaviate.cloud/v1/nodes "HTTP/1.1 200 OK"
+2025-05-05 11:20:36,928 [INFO] Added 26000 objects to batch
+2025-05-05 11:20:37,065 [INFO] Added 26500 objects to batch
+2025-05-05 11:20:37,194 [INFO] Added 27000 objects to batch
+2025-05-05 11:20:37,391 [INFO] Added 27500 objects to batch
+2025-05-05 11:20:37,546 [INFO] Added 28000 objects to batch
+2025-05-05 11:20:37,651 [INFO] Added 28500 objects to batch
+2025-05-05 11:20:37,789 [INFO] Added 29000 objects to batch
+2025-05-05 11:20:38,035 [INFO] Added 29500 objects to batch
+2025-05-05 11:20:38,075 [INFO] HTTP Request: GET https://gyytjsarjy1zjv5iyhfq.c0.us-west3.gcp.weaviate.cloud/v1/nodes "HTTP/1.1 200 OK"
+2025-05-05 11:20:38,185 [INFO] Added 30000 objects to batch
+2025-05-05 11:20:38,343 [INFO] Added 30500 objects to batch
+2025-05-05 11:20:38,456 [INFO] Added 31000 objects to batch
+2025-05-05 11:20:38,567 [INFO] Added 31500 objects to batch
+2025-05-05 11:20:38,771 [INFO] Added 32000 objects to batch
+2025-05-05 11:20:38,889 [INFO] Added 32500 objects to batch
+2025-05-05 11:20:39,024 [INFO] Added 33000 objects to batch
+2025-05-05 11:20:39,124 [INFO] Added 33500 objects to batch
+2025-05-05 11:20:39,341 [INFO] Added 34000 objects to batch
+2025-05-05 11:20:39,356 [INFO] HTTP Request: GET https://gyytjsarjy1zjv5iyhfq.c0.us-west3.gcp.weaviate.cloud/v1/nodes "HTTP/1.1 200 OK"
+2025-05-05 11:20:39,458 [INFO] Added 34500 objects to batch
+2025-05-05 11:20:39,579 [INFO] Added 35000 objects to batch
+2025-05-05 11:20:39,683 [INFO] Added 35500 objects to batch
+2025-05-05 11:20:39,887 [INFO] Added 36000 objects to batch
+2025-05-05 11:20:40,048 [INFO] Added 36500 objects to batch
+2025-05-05 11:20:40,207 [INFO] Added 37000 objects to batch
+2025-05-05 11:20:40,308 [INFO] Added 37500 objects to batch
+2025-05-05 11:20:40,451 [INFO] Added 38000 objects to batch
+2025-05-05 11:20:40,635 [INFO] HTTP Request: GET https://gyytjsarjy1zjv5iyhfq.c0.us-west3.gcp.weaviate.cloud/v1/nodes "HTTP/1.1 200 OK"
+2025-05-05 11:20:41,885 [INFO] HTTP Request: GET https://gyytjsarjy1zjv5iyhfq.c0.us-west3.gcp.weaviate.cloud/v1/nodes "HTTP/1.1 200 OK"
+2025-05-05 11:20:42,208 [INFO] Completed batch preparation: 38151 objects added
+2025-05-05 11:20:42,456 [INFO] Final collection size: 38151 objects
+2025-05-05 11:20:42,456 [WARNING] Ingestion may be incomplete: 38151 objects prepared, expected collection size 76302, actual 38151
+2025-05-05 11:20:42,708 [INFO] Sample object from collection: {'amountCommitted': 1497792.0, 'combinedText': 'Purpose: to quantify microcredential/career pathway outcomes with wage and employment data \nDivision: U.S. Program \nRegion Served: AMERICA', 'regionServed': 'AMERICA', 'purpose': 'to quantify microcredential/career pathway outcomes with wage and employment data', 'division': 'U.S. Program', 'grantId': 'INV-050566'}
+2025-05-05 11:20:42,709 [INFO] Weaviate client connection closed
+2025-05-05 11:20:42,709 [INFO] Ingestion process finished. Success: False
+2025-05-05 11:20:42,710 [ERROR] Script completed with errors, check logs for details
