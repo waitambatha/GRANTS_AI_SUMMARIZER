@@ -126,21 +126,20 @@ def setup_weaviate_and_rag():
             client.close()
         return None, None # Return None for both
 # --- Execute Custom Weaviate Query ---
+# --- Execute Custom Weaviate Query ---
 def execute_custom_query(client: weaviate.WeaviateClient, params: dict):
-    """ Executes a direct Weaviate query based on parsed parameters [cite: 15] """
+    """ Executes a direct Weaviate query based on parsed parameters """
     try:
         grants = client.collections.get(GRANT_CLASS_NAME)
         filters = None
         if params.get("region"):
             # Use Weaviate's filtering capabilities
-            # *** CORRECTED Filter USAGE BELOW ***
-            filters = Filter.by_property("regionServed").equal(params["region"])
+            filters = Filter.by_property("regionServed").equal(params["region"]) # Make sure Filter is imported
 
         response = grants.query.fetch_objects(
             limit=params["limit"],
-            filters=filters, [cite: 16]
-            # *** CORRECTED Sort USAGE BELOW ***
-            sort=Sort.by_property(name=params["sort_by"], order=params["sort_order"])
+            filters=filters,  # Removed the [cite: 16] marker
+            sort=Sort.by_property(name=params["sort_by"], order=params["sort_order"]) # Make sure Sort is imported and order uses the SortOrder enum correctly
         )
         return response.objects # Return the list of Weaviate objects
 
