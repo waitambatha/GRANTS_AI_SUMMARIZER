@@ -48,6 +48,7 @@ orjson==3.10.18
 packaging==24.2
 pandas==2.2.3
 pillow==11.2.1
+plotly
 protobuf==5.29.4
 pyarrow==20.0.0
 pycparser==2.22
